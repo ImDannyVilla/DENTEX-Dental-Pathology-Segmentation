@@ -20,7 +20,7 @@ This project trains a self-configuring U-Net (nnU-Net) to perform pixel-wise cla
 
 ---
 
-## Results
+## The Results
 
 Trained for 1000 epochs on NVIDIA H100 (Vast.ai) and evaluated on a held-out validation set:
 
