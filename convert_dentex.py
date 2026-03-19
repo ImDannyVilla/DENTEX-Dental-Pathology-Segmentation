@@ -1,5 +1,4 @@
 """
-DENTEX → nnU-Net Conversion Script (v2)
 ========================================
 Converts quadrant-enumeration-disease data to nnU-Net v2 format.
 
