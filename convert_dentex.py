@@ -1,5 +1,4 @@
 """
-========================================
 Converts quadrant-enumeration-disease data to nnU-Net v2 format.
 
 Usage:
@@ -85,10 +84,6 @@ def load_coco_json(json_path: str):
 
 
 def polygon_to_mask(mask: np.ndarray, segmentation: list, label: int) -> np.ndarray:
-    """
-    Fill a polygon from COCO segmentation into the mask array.
-    segmentation is a flat list [x1,y1,x2,y2,...] — convert to (N,2) points.
-    """
     for seg in segmentation:
         pts = np.array(seg, dtype=np.int32).reshape(-1, 2)
         cv2.fillPoly(mask, [pts], color=label)
@@ -190,7 +185,7 @@ def convert(dentex_dir: str, output_dir: str, val_split: float = 0.1):
     with open(output_dir / "dataset.json", "w") as f:
         json.dump(dataset_json, f, indent=2)
 
-    print(f"\n✅ Done! Dataset written to: {output_dir}")
+    print(f"\n Done. Dataset written to: {output_dir}")
     print(f"   Training samples:   {n_train}")
     print(f"   Validation samples: {len(val_ids)}")
     print(f"\nNext steps:")
