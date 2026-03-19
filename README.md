@@ -1,4 +1,4 @@
-# 🦷 DENTEX Dental Pathology Segmentation
+# DENTEX Dental Pathology Segmentation
 
 Semantic segmentation of dental pathologies on panoramic X-rays using nnU-Net, trained on the [DENTEX MICCAI 2023](https://dentex.grand-challenge.org/) challenge dataset.
 
@@ -13,10 +13,10 @@ This project trains a self-configuring U-Net (nnU-Net) to perform pixel-wise cla
 
 | Label | Pathology | Color |
 |-------|-----------|-------|
-| 1 | Impacted Tooth | 🔵 Blue |
-| 2 | Caries | 🟢 Green |
-| 3 | Deep Caries | 🔴 Red |
-| 4 | Periapical Lesion | 🟡 Yellow |
+| 1 | Impacted Tooth |  Blue |
+| 2 | Caries |  Green |
+| 3 | Deep Caries |  Red |
+| 4 | Periapical Lesion |  Yellow |
 
 ---
 
